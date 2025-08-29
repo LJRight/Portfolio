@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af936eee75682844d85ebfd2e083e9fa, type: 3}
+  m_Name: BossSpawnEvent
+  m_EditorClassIdentifier: 
+  time: 600
+  spawnInterval: 0
+  enemy: {fileID: 11400000, guid: 3fb33892e24a12d42b16b37e351022e1, type: 2}

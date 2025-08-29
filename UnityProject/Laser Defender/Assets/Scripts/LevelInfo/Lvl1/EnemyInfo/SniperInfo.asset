@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a2f5050bf6fba458f6aaf22983a9aa, type: 3}
+  m_Name: SniperInfo
+  m_EditorClassIdentifier: 
+  hp: 15
+  prefab: {fileID: 1819178581801150524, guid: 24527e216da39f24fbca7b7a6a0ad961, type: 3}
+  speed: 2.5
+  firingRate: 0
+  projectileSpeed: 0
+  hasFixedSpawnPosition: 1
+  spawnPositions:
+  - startPos: {x: -3.5, y: 3}
+    targetPos: {x: -1.5, y: 1.8}
+  - startPos: {x: -2.3, y: 5.5}
+    targetPos: {x: -1.3, y: 3.8}
+  - startPos: {x: 2.3, y: 5.5}
+    targetPos: {x: 1.3, y: 3.8}
+  - startPos: {x: 3.5, y: 3}
+    targetPos: {x: 1.5, y: 1.8}
