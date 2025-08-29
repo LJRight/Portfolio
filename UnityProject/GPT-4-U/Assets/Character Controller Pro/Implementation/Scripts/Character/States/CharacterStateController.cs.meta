@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 991c552c8efe8914186b0d06951c5a1e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Implementation/Scripts/Character/States/CharacterStateController.cs
+  uploadId: 711412

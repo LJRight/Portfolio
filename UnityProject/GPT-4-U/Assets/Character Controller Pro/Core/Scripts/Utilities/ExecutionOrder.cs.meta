@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2988c4ba7fa538b45a474a53fc4ea0e9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Core/Scripts/Utilities/ExecutionOrder.cs
+  uploadId: 711412

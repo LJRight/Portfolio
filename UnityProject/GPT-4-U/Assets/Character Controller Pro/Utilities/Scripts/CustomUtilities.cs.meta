@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3d7b4c9f317af494fa10a74e6d9694f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Utilities/Scripts/CustomUtilities.cs
+  uploadId: 711412

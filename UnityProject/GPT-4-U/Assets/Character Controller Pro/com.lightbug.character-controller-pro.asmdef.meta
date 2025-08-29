@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2e7f0f7a8ee6e144db6fb95614c6d8fe
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/com.lightbug.character-controller-pro.asmdef
+  uploadId: 711412

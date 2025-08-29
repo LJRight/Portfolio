@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a483e2809a144724ba435f21efdab5ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Utilities/Scripts/PhysicsComponent.cs
+  uploadId: 711412

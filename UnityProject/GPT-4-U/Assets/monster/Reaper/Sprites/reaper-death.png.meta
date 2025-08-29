@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 4a7b0605ab2772847a27408d497be636
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7314429645449509082
+    second: reaper-death_0
+  - first:
+      213: 1475285728428932168
+    second: reaper-death_1
+  - first:
+      213: -5425498935138019470
+    second: reaper-death_2
+  - first:
+      213: 2886575428466443371
+    second: reaper-death_3
+  - first:
+      213: -6148540605932036094
+    second: reaper-death_4
+  - first:
+      213: 5862161586837167066
+    second: reaper-death_5
+  - first:
+      213: -926806891433271220
+    second: reaper-death_6
+  - first:
+      213: -3654727924545035979
+    second: reaper-death_7
+  - first:
+      213: 56085161848617153
+    second: reaper-death_8
+  - first:
+      213: -3173489695717819792
+    second: reaper-death_9
+  - first:
+      213: -4301233448165833636
+    second: reaper-death_10
+  - first:
+      213: 2018945459049532176
+    second: reaper-death_11
+  - first:
+      213: -4272586012546752724
+    second: reaper-death_12
+  - first:
+      213: -922768153633803627
+    second: reaper-death_13
+  - first:
+      213: 5335025565364152447
+    second: reaper-death_14
+  - first:
+      213: -5711356696866382561
+    second: reaper-death_15
+  - first:
+      213: -4924838418987016659
+    second: reaper-death_16
+  - first:
+      213: -1047303565867912330
+    second: reaper-death_17
+  - first:
+      213: 1235762601862946060
+    second: reaper-death_18
+  - first:
+      213: 649533501769119069
+    second: reaper-death_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reaper-death_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6274560bdfced7a90800000000000000
+      internalID: -7314429645449509082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 85
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cb539bd84497410800000000000000
+      internalID: 1475285728428932168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 91
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27796d9c671c4b4b0800000000000000
+      internalID: -5425498935138019470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 88
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b640d17fe0d2f0820800000000000000
+      internalID: 2886575428466443371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_6
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 95
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c406cbcea025323f0800000000000000
+      internalID: -926806891433271220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_7
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0
+        width: 95
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531eac2f05cc74dc0800000000000000
+      internalID: -3654727924545035979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 85
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a70648fef75f3d0800000000000000
+      internalID: -3173489695717819792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_5
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 93
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b098bb23cb40c10800000000000000
+      internalID: 2018945459049532176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_8
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 0
+        width: 94
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78682b4c71d90a40800000000000000
+      internalID: 5335025565364152447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_9
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 0
+        width: 99
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d1bb1285f2db0b0800000000000000
+      internalID: -5711356696866382561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_10
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 95
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e15140d8577abb0800000000000000
+      internalID: -4924838418987016659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_11
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 0
+        width: 94
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6737178a4fa3771f0800000000000000
+      internalID: -1047303565867912330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_12
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 0
+        width: 94
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dd0cef98f462110800000000000000
+      internalID: 1235762601862946060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaper-death_13
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 0
+        width: 90
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55f9aa474b930900800000000000000
+      internalID: 649533501769119069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7f9f2e65756fcf84da70a55d3f737819
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      reaper-death_0: -7314429645449509082
+      reaper-death_1: 1475285728428932168
+      reaper-death_10: -4924838418987016659
+      reaper-death_11: -1047303565867912330
+      reaper-death_12: 1235762601862946060
+      reaper-death_13: 649533501769119069
+      reaper-death_2: -5425498935138019470
+      reaper-death_3: 2886575428466443371
+      reaper-death_4: -3173489695717819792
+      reaper-death_5: 2018945459049532176
+      reaper-death_6: -926806891433271220
+      reaper-death_7: -3654727924545035979
+      reaper-death_8: 5335025565364152447
+      reaper-death_9: -5711356696866382561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

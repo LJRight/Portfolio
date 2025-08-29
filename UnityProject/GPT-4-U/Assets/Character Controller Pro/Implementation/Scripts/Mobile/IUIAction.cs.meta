@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8c3bf6ae7a4de074d8a87c5ada3023d5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Implementation/Scripts/Mobile/IUIAction.cs
+  uploadId: 711412

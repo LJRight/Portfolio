@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ee2b3029d2463954bb27e760a7e3a31b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Materials/NotAllowed.mat
+  uploadId: 711412

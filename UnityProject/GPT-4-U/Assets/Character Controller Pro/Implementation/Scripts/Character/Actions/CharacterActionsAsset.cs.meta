@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 73b3b2e86a24b1b488fdc2cea49af7f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Implementation/Scripts/Character/Actions/CharacterActionsAsset.cs
+  uploadId: 711412

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 09dde04d4de51fa43a04cf69fbf9b9b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Implementation/Scripts/Inputs/InputHandler/UnityInputHandler.cs
+  uploadId: 711412

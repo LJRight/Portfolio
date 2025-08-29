@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 53a4db36c6efc5a4f9ea4c678bda3241
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Prefabs/Rigidbodies/Columbium.prefab
+  uploadId: 711412
