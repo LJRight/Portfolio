@@ -19,6 +19,9 @@ public class Enemy : ScriptableObject
     public bool HasFixedSpawnPosition => hasFixedSpawnPosition;
     [SerializeField] List<SpawnPosition> spawnPositions;    // 고정 스폰 위치에 대한 리스트
     public List<SpawnPosition> SpawnPositions => spawnPositions;
+    [SerializeField] private int point, coin;
+    public int Point => point;
+    public int Coin => coin;
 }
 
 [Serializable]

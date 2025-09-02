@@ -29,6 +29,7 @@ public class EnemySpawner : MonoBehaviour
                 GameObject instance = Instantiate(prefab, startPos,
                                                 Quaternion.identity, transform);
                 instance.GetComponent<PathFinder>().Init(wayPoints, moveSpeed);
+                // instance.GetComponent<Health>().Init()
                 yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
             }
             yield return new WaitForSeconds(timeBetwwenWaves);
@@ -58,6 +59,7 @@ public class EnemySpawner : MonoBehaviour
                 freePosition.RemoveAt(randomIdx);
                 GameObject instance = Instantiate(enemy.Prefab, enemy.SpawnPositions[positionIdx].StartPosition, FixedSpawnQuaternion[positionIdx]);
                 instance.GetComponent<Sniper>().Init(enemy.SpawnPositions[positionIdx].TargetPosition, positionIdx, enemy.Speed);
+                instance.GetComponent<Health>().Init(enemy.HP, enemy.Point, enemy.Coin);
             }
             else
             {
@@ -66,6 +68,7 @@ public class EnemySpawner : MonoBehaviour
                 GameObject instance = Instantiate(enemy.Prefab, randomSpawnPos, Quaternion.identity);
                 Debug.Log(instance.transform.position);
                 instance.GetComponent<LinearMove>()?.Init(randomTargetPos, enemy.Speed);
+                instance.GetComponent<Health>().Init(enemy.HP, enemy.Point, enemy.Coin);
             }
             yield return new WaitForSeconds(spawnInterval);
         }

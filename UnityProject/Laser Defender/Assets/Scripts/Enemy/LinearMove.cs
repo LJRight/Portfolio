@@ -8,9 +8,7 @@ public class LinearMove : MonoBehaviour
     private float speed;
     public void Init(Vector2 targetPos, float speed)
     {
-        
         this.targetPos = targetPos;
-        Debug.Log($"Init Method Run!\nTarget Position : {targetPos}");
         this.speed = speed;
     }
     void Update()

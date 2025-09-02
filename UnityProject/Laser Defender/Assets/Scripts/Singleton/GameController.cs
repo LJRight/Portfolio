@@ -44,8 +44,7 @@ public class GameController : MonoBehaviour
             timeline = currentLevelInfo.GetTimeLine();
             EnemySpawnCoroutine = new List<Coroutine>();
             UIManager.Instance.OnLevelSceneLoaded();
-
-            // EnemySpawnCoroutine.Add(StartCoroutine(enemySpawner.SpawnEnemyWaves(currentLevelInfo.Waves)));
+            EnemySpawnCoroutine.Add(StartCoroutine(enemySpawner.SpawnEnemyWaves(currentLevelInfo.Waves)));
         }
         else
         {

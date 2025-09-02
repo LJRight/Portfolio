@@ -16,21 +16,8 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float timeBetweenEnemySpawns = 1f;
     [SerializeField] float spawnTimeVariance = 0f;
     [SerializeField] float minimumSpawnTime = 0.2f;
-    public enum RandomStartPosDirect { None, X, Y };
-    [SerializeField] float minBound, maxBound;
-    [SerializeField] RandomStartPosDirect random;
     public Transform GetStartingWayPoint()
     {
-        return (random != RandomStartPosDirect.None) ? InitRandomPos() : pathPrefab.GetChild(0);
-    }
-    Transform InitRandomPos()
-    {
-        Vector2 pos = pathPrefab.transform.position;
-        if (random == RandomStartPosDirect.X)
-            pos.x = Random.Range(minBound, maxBound);
-        else if (random == RandomStartPosDirect.Y)
-            pos.y = Random.Range(minBound, maxBound);
-        pathPrefab.transform.position = pos;
         return pathPrefab.GetChild(0);
     }
     public List<Transform> GetWayPoints()
