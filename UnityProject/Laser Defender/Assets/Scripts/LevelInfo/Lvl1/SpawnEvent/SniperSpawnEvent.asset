@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af936eee75682844d85ebfd2e083e9fa, type: 3}
   m_Name: SniperSpawnEvent
   m_EditorClassIdentifier: 
-  time: 2
-  spawnInterval: 5
+  time: 15
+  spawnInterval: 8
   enemy: {fileID: 11400000, guid: c61816e04775e4fc984c17a11bc86987, type: 2}

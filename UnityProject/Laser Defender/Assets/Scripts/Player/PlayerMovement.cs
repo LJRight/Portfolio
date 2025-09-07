@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator playerAnimator;
     Vector2 rawInput;
-    Vector2 minBounds, maxBounds;
+    Vector2 minBounds, maxBounds;   
     void Awake()
     {
         playerAnimator = GetComponent<Animator>();
@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 curInput = isJoystick ? joystick.Direction : rawInput;
+        // Vector2 curInput = joystick.Direction;
         Vector2 desiredVelocity = curInput * moveSpeed;
         SetAnimation(curInput.x);
         Vector2 nextPos = rb.position + desiredVelocity * Time.fixedDeltaTime;
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 clampedPos = new Vector2(clampedX, clampedY);
 
         Vector2 correctedVelocity = (clampedPos - rb.position) / Time.fixedDeltaTime;
-        rb.velocity = correctedVelocity;
+        rb.linearVelocity = correctedVelocity;
 
         for (int i = 0; i < followers.Length; i++)
         {

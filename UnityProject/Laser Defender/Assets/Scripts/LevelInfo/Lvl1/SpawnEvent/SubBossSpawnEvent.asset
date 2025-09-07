@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af936eee75682844d85ebfd2e083e9fa, type: 3}
   m_Name: SubBossSpawnEvent
   m_EditorClassIdentifier: 
-  time: 600
-  spawnInterval: 3
+  time: 60
+  spawnInterval: 45
   enemy: {fileID: 11400000, guid: d4f323eb71a494e61a2a480ee973ecc9, type: 2}

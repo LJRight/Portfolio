@@ -8,10 +8,8 @@ public class PathFinder : MonoBehaviour
     float moveSpeed;
     public void Init(List<Transform> wayPoints, float moveSpeed)
     {
-        GetComponent<Shooter>();
         this.wayPoints = wayPoints;
         this.moveSpeed = moveSpeed;
-        GetComponent<Shooter>().StartFiring();
     }
     void Update()
     {

@@ -23,7 +23,7 @@ public class ItemMove : MonoBehaviour
             direction = GetRandomDirectionAroundDown();
         else
             direction = new Vector2(0f, -1f);
-        rb.velocity = direction * speed;
+        rb.linearVelocity = direction * speed;
     }
     Vector2 GetRandomDirectionAroundDown()
     {

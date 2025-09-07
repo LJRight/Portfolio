@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteScroller : MonoBehaviour
@@ -11,8 +9,6 @@ public class SpriteScroller : MonoBehaviour
     {
         material = GetComponent<SpriteRenderer>().material;
     }
-
-    // Update is called once per frame
     void Update()
     {
         offset = moveSpeed * Time.deltaTime;

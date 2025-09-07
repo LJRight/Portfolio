@@ -45,15 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 1
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 1
   burstCooldown: 3
   minBurstCnt: 4
   maxBurstCnt: 5
   myMode: 0
-  projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
+  projectilePrefab: {fileID: 70048091538130140, guid: 594b06b068e028249b8342555a74ae4e, type: 3}
   projectileSpeed: 2
   firingRate: 0.25
 --- !u!1 &1566454807579666717
@@ -80,7 +78,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566454807579666717}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -134,15 +132,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 1
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 1
   burstCooldown: 3
   minBurstCnt: 4
   maxBurstCnt: 5
   myMode: 0
-  projectilePrefab: {fileID: 70048091538130140, guid: 594b06b068e028249b8342555a74ae4e, type: 3}
+  projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
   projectileSpeed: 2.5
   firingRate: 0.35
 --- !u!1 &3914203135267889885
@@ -190,15 +186,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 1
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 1
   burstCooldown: 3
   minBurstCnt: 4
   maxBurstCnt: 5
   myMode: 0
-  projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
+  projectilePrefab: {fileID: 70048091538130140, guid: 594b06b068e028249b8342555a74ae4e, type: 3}
   projectileSpeed: 2
   firingRate: 0.25
 --- !u!1 &5727574462464124266
@@ -246,9 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 0
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 4.5
   minBurstCnt: 4
@@ -302,15 +294,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 1
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 1
   burstCooldown: 3
   minBurstCnt: 4
   maxBurstCnt: 5
   myMode: 0
-  projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
+  projectilePrefab: {fileID: 70048091538130140, guid: 594b06b068e028249b8342555a74ae4e, type: 3}
   projectileSpeed: 2
   firingRate: 0.25
 --- !u!1 &7280399798801972043
@@ -358,15 +348,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 1
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 1
   burstCooldown: 3
   minBurstCnt: 4
   maxBurstCnt: 5
   myMode: 0
-  projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
+  projectilePrefab: {fileID: 70048091538130140, guid: 594b06b068e028249b8342555a74ae4e, type: 3}
   projectileSpeed: 2
   firingRate: 0.25
 --- !u!1 &7926772799760743477
@@ -418,6 +406,7 @@ GameObject:
   - component: {fileID: 8284120577273642580}
   - component: {fileID: 3660090333262433367}
   - component: {fileID: 4716017375138789132}
+  - component: {fileID: 939634267722349499}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Enemy
@@ -438,10 +427,10 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 7602518342344194187}
   - {fileID: 2423762415575118152}
   - {fileID: 8929733512182052883}
   - {fileID: 494903685954270920}
-  - {fileID: 7602518342344194187}
   - {fileID: 5791705979878650147}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -464,6 +453,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -501,7 +491,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!50 &1911693765796147524
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -512,8 +502,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -596,7 +586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6425d42bdbc8718488912459e9bac5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverMenuIdx: 4
   isPlayer: 0
   health: 12000
   myPoint: 1500
@@ -630,6 +619,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89b4611d2d0743cfb50c6226df1941f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LG:
+  - {fileID: 6604901947302046542}
+  - {fileID: 4886951203715197079}
+  RG:
+  - {fileID: 5966560468407794036}
+  - {fileID: 6500058632840607804}
+  Sniper:
+  - {fileID: 2115093525635426328}
+  - {fileID: 1400767832670261085}
+  Cannon: {fileID: 7409406583305184131}
+  rate: 0.05
+  cnt: 18
+  spd: 8
+  time: 0
+  mvSpd: 0.5
+  duration: 2.5
+  rate_: 0.18
+  stAg: 60
+--- !u!114 &939634267722349499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641389990069343667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3039ce278a47aed49947e4167c1826c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reflectTime: 0.75
 --- !u!1 &9139487762903038667
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,9 +695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 1
-  towardPlayer: 0
   isBurst: 1
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 4.5
   minBurstCnt: 4

@@ -19,7 +19,6 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         get { return deadZone; }
         set { deadZone = Mathf.Abs(value); }
     }
-
     public AxisOptions AxisOptions { get { return AxisOptions; } set { axisOptions = value; } }
     public bool SnapX { get { return snapX; } set { snapX = value; } }
     public bool SnapY { get { return snapY; } set { snapY = value; } }
@@ -38,6 +37,9 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     private Camera cam;
 
     private Vector2 input = Vector2.zero;
+
+    private bool isLocked = false;
+
     protected virtual void Start()
     {
         HandleRange = handleRange;
@@ -57,11 +59,13 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     public virtual void OnPointerDown(PointerEventData eventData)
     {
+        if (isLocked) return;
         OnDrag(eventData);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (isLocked) return;
         cam = null;
         if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
             cam = canvas.worldCamera;
@@ -129,6 +133,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     public virtual void OnPointerUp(PointerEventData eventData)
     {
+        if (isLocked) return;
         input = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
     }
@@ -142,6 +147,17 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
             return localPoint - (background.anchorMax * baseRect.sizeDelta) + pivotOffset;
         }
         return Vector2.zero;
+    }
+    public void Lock()
+    {
+        isLocked = true;
+        input = Vector2.zero;
+        if (handle != null) handle.anchoredPosition = Vector2.zero;
+    }
+
+    public void Unlock()
+    {
+        isLocked = false;
     }
 }
 

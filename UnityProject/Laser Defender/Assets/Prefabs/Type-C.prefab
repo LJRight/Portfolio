@@ -49,10 +49,10 @@ MonoBehaviour:
   isBurst: 1
   isSpriteRotating: 0
   isTwinCannon: 1
-  burstCooldown: 1.5
+  burstCooldown: 3
   minBurstCnt: 3
   maxBurstCnt: 4
-  myMode: 0
+  myMode: 1
   projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
   projectileSpeed: 2
   firingRate: 0.2
@@ -115,6 +115,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -220,7 +221,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!50 &-1113293213235807657
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -231,8 +232,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -257,7 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6425d42bdbc8718488912459e9bac5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverMenuIdx: 4
   isPlayer: 0
   health: 15
   myPoint: 250
@@ -340,10 +340,10 @@ MonoBehaviour:
   isBurst: 1
   isSpriteRotating: 0
   isTwinCannon: 1
-  burstCooldown: 1.5
+  burstCooldown: 3
   minBurstCnt: 3
   maxBurstCnt: 4
-  myMode: 0
+  myMode: 1
   projectilePrefab: {fileID: 2089379246625679226, guid: 4b143d124a23291408f83adf4f59d22a, type: 3}
   projectileSpeed: 2
   firingRate: 0.2

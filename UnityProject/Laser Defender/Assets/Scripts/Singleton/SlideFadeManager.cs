@@ -5,12 +5,10 @@ using DG.Tweening;
 
 public class SlideFadeManager : MonoBehaviour
 {
-    public static SlideFadeManager Instance;
-
     [SerializeField] private RectTransform fadePanel;
     [SerializeField] private float slideInDuration = 1f;
     [SerializeField] private float slideOutDuration = .5f;
-    private void Awake()
+    private void Start()
     {
         fadePanel.anchoredPosition = new Vector2(0, -fadePanel.rect.height);
     }

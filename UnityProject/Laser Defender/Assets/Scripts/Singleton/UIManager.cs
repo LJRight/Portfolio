@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject shopMenuPanel;
     [SerializeField] private GameObject settingMenuPanel;
     private VariableJoystick joyStick;
+    public VariableJoystick JoyStick => joyStick;
 
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI scoreText;
@@ -75,8 +76,11 @@ public class UIManager : MonoBehaviour
     }
     public void SetPlayerDPSText()
     {
-        float dps = GameObject.FindWithTag("Player").GetComponent<PlayerLevel>().GetPlayerDPS();
-        SetText(playerDpsText, $"{dps:F2} dps");
+        // float dps = GameObject.FindWithTag("Player").GetComponent<PlayerLevel>().GetPlayerDPS();
+
+        // float mul = GameObject.FindWithTag("Player").GetComponent<PlayerLevel>().GetPlayerPowerMultiplier();
+
+        // SetText(playerDpsText, $"{dps:F2} dps" + $"(x{mul}) / game - {GameController.Instance.DifficultyLevel}");
     }
     string TimerFormat(float value)
     {
@@ -118,6 +122,7 @@ public class UIManager : MonoBehaviour
         SetUpSettingMenuPanelListener();
         SetUpShopMenuPanelExitButtonListener();
         SetPlayerDPSText();
+        SetPlayerHealthText(GameObject.FindWithTag("Player").GetComponent<Health>().HP);
     }
     public void OnMainMenuSceneLoaded()
     {
@@ -157,7 +162,7 @@ public class UIManager : MonoBehaviour
         quitButton.onClick.RemoveAllListeners();
         quitButton.onClick.AddListener(() =>
         {
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(quitButton);
             if (GameController.Instance != null)
                 StartCoroutine(GameController.Instance.QuitGame());
             else
@@ -166,7 +171,7 @@ public class UIManager : MonoBehaviour
         gameStartButton.onClick.RemoveAllListeners();
         gameStartButton.onClick.AddListener(() =>
         {
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(gameStartButton);
             if (fm != null)
                 fm.SlideToScene(firstStageIdx);
             else
@@ -194,7 +199,7 @@ public class UIManager : MonoBehaviour
         restartButton.onClick.RemoveAllListeners();
         restartButton.onClick.AddListener(() =>
         {
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(restartButton);
             ScoreKeeper.Instance.ResetScore();
             GameController.Instance.ResetGameTime();
             if (fm != null)
@@ -205,7 +210,7 @@ public class UIManager : MonoBehaviour
         mainMenuButton.onClick.RemoveAllListeners();
         mainMenuButton.onClick.AddListener(() =>
         {
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(mainMenuButton);
             ScoreKeeper.Instance.ResetScore();
             GameController.Instance.ResetGameTime();
             if (fm != null)
@@ -214,7 +219,6 @@ public class UIManager : MonoBehaviour
                 Debug.LogWarning("Slide Fade Manager not found on UI Manager object");
         });
     }
-
     private void SetUpInGameTopUIPanelSettingButtonListener()
     {
         Button settingButton = inGameTopUIPanel.transform.Find("Setting Button")?.GetComponent<Button>();
@@ -226,11 +230,10 @@ public class UIManager : MonoBehaviour
         settingButton.onClick.RemoveAllListeners();
         settingButton.onClick.AddListener(() =>
         {
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(settingButton);
             GameController.Instance.StopGameTime();
             SettingMenuPanelActive(true);
             joyStick.gameObject.SetActive(false);
-            settingButton.enabled = false;
         });
     }
     private void SetUpSettingMenuPanelListener()
@@ -245,7 +248,7 @@ public class UIManager : MonoBehaviour
         exitButton.onClick.AddListener(() =>
         {
             GameController.Instance.PlayGameTime();
-            AudioPlayer.Instance.PlayButtonSelectClip();
+            OnButtonClick(exitButton);
             SettingMenuPanelActive(false);
             joyStick.gameObject.SetActive(true);
             inGameTopUIPanel.transform.Find("Setting Button").GetComponent<Button>().enabled = true;
@@ -292,5 +295,16 @@ public class UIManager : MonoBehaviour
             AudioPlayer.Instance.PlayButtonSelectClip();
             ShopPanelActive(false);
         });
+    }
+    private void OnButtonClick(Button btn)
+    {
+        btn.interactable = false;
+        AudioPlayer.Instance.PlayButtonSelectClip();
+        StartCoroutine(Delay(btn));
+    }
+    private IEnumerator Delay(Button btn)
+    {
+        yield return new WaitForSeconds(.5f);
+        btn.interactable = true;
     }
 }

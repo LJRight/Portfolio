@@ -4,32 +4,31 @@ using UnityEngine;
 
 public class Reflection : MonoBehaviour
 {
-    Vector2 direction;
-    float speed;
+    private float speed;
     Rigidbody2D myRB;
-    int reflectionCount = 2;
-    bool isReflected = false;
-    float reflectTime = 0.75f;
+    private bool isReflected = false;
+    [SerializeField] private float reflectTime = 0.75f;
     void Awake()
     {
         myRB = GetComponent<Rigidbody2D>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Wall") && reflectionCount > 0 && !isReflected)
+        if (collision.CompareTag("Wall") && !isReflected)
         {
-            reflectionCount--;
             isReflected = true;
             StartCoroutine(WaitNextReflection());
-            direction = myRB.velocity.normalized;
-            speed = myRB.velocity.magnitude;
-            direction = Vector2.Reflect(direction, collision.gameObject.GetComponent<ReflectionWall>().normalV);
-            myRB.velocity = direction * speed;
+            Debug.Log(GetReflection(collision));
+            myRB.linearVelocity = GetReflection(collision);
         }
     }
-    IEnumerator WaitNextReflection()
+    private IEnumerator WaitNextReflection()
     {
         yield return new WaitForSeconds(reflectTime);
         isReflected = false;
+    }
+    private Vector2 GetReflection(Collider2D collision)
+    {
+        return myRB.linearVelocity.magnitude * Vector2.Reflect(myRB.linearVelocity.normalized, collision.gameObject.GetComponent<ReflectionWall>().normalV);
     }
 }

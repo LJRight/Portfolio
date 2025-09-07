@@ -6,20 +6,24 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] float timeBetwwenWaves = 0f;
     [SerializeField] bool isLooping = true;
     WaveConfigSO currentWave;
     public WaveConfigSO CurrentWave { get { return currentWave; } }
-    [SerializeField] float speedToTargetPosition = 2.0f;
     List<Quaternion> FixedSpawnQuaternion;
     List<int> freePosition;
     const float SPRITE_FACING_OFFSET = -90f;
-    public IEnumerator SpawnEnemyWaves(List<WaveConfigSO> waveConfigs)
+    // 기본적 생성 루틴 
+    public IEnumerator SpawnEnemyWaves(List<WaveConfigSO> waveConfigs, LevelInfoSO LevelInfo)
     {
+        int waveCounter = 0;
         do
         {
-            int randomWaveIdx = Random.Range(0, waveConfigs.Count);
-            currentWave = waveConfigs[randomWaveIdx];
+            if (waveCounter == waveConfigs.Count)
+            {
+                waveCounter = 0;
+                waveConfigs.Shuffle();
+            }
+            currentWave = waveConfigs[waveCounter++];
             GameObject prefab = currentWave.Prefab;
             Vector3 startPos = currentWave.GetStartingWayPoint().position;
             List<Transform> wayPoints = currentWave.GetWayPoints();
@@ -29,19 +33,25 @@ public class EnemySpawner : MonoBehaviour
                 GameObject instance = Instantiate(prefab, startPos,
                                                 Quaternion.identity, transform);
                 instance.GetComponent<PathFinder>().Init(wayPoints, moveSpeed);
-                // instance.GetComponent<Health>().Init()
+                instance.GetComponent<Health>().Init(LevelInfo.BasicEnemy.HP * Mathf.Floor(GameController.Instance.DifficultyLevel),
+                                                     LevelInfo.BasicEnemy.Point,
+                                                     LevelInfo.BasicEnemy.Coin);
+                instance.GetComponent<Shooter>().Init(true,
+                                                      LevelInfo.BasicEnemy.HasRandomFiringRate,
+                                                      0,
+                                                      LevelInfo.BasicEnemy.MinFiringRate,
+                                                      LevelInfo.BasicEnemy.MaxFiringRate);
                 yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
             }
-            yield return new WaitForSeconds(timeBetwwenWaves);
-
+            yield return new WaitForSeconds(LevelInfo.GetRandomWaveTime());
         } while (isLooping);
     }
-    public IEnumerator SpawnEnemy(float spawnInterval, Enemy enemy)
+    // 스나이퍼, 중간 보스 생성 루틴
+    public IEnumerator SpawnEnemy(float spawnInterval, EnemyInfo enemy)
     {
         // 고정 스폰 위치를 가지는 적의 경우
         if (enemy.HasFixedSpawnPosition)
             InitQuaternion(enemy.SpawnPositions);
-
         while (true)
         {
             // 고정 스폰 위치를 가지는 적의 경우
@@ -57,21 +67,38 @@ public class EnemySpawner : MonoBehaviour
                 int randomIdx = Random.Range(0, freePosition.Count);
                 int positionIdx = freePosition[randomIdx];
                 freePosition.RemoveAt(randomIdx);
-                GameObject instance = Instantiate(enemy.Prefab, enemy.SpawnPositions[positionIdx].StartPosition, FixedSpawnQuaternion[positionIdx]);
-                instance.GetComponent<Sniper>().Init(enemy.SpawnPositions[positionIdx].TargetPosition, positionIdx, enemy.Speed);
-                instance.GetComponent<Health>().Init(enemy.HP, enemy.Point, enemy.Coin);
+                GameObject instance = Instantiate(enemy.Prefab,
+                                                  enemy.SpawnPositions[positionIdx].StartPosition,
+                                                  FixedSpawnQuaternion[positionIdx]);
+
+                instance.GetComponent<Sniper>().Init(enemy.SpawnPositions[positionIdx].TargetPosition,
+                                                     positionIdx,
+                                                     enemy.Speed);
+                instance.GetComponent<Health>().Init(enemy.HP * GameController.Instance.DifficultyLevel,
+                                                     enemy.Point,
+                                                     enemy.Coin);
             }
             else
             {
                 Vector2 randomSpawnPos = Camera.main.ViewportToWorldPoint(new Vector2(Random.Range(0.1f, .9f), 1.1f));
                 Vector2 randomTargetPos = new Vector2(randomSpawnPos.x, Camera.main.ViewportToWorldPoint(new Vector2(0, -0.1f)).y);
                 GameObject instance = Instantiate(enemy.Prefab, randomSpawnPos, Quaternion.identity);
-                Debug.Log(instance.transform.position);
+
                 instance.GetComponent<LinearMove>()?.Init(randomTargetPos, enemy.Speed);
-                instance.GetComponent<Health>().Init(enemy.HP, enemy.Point, enemy.Coin);
+                instance.GetComponent<Health>().Init(enemy.HP * GameController.Instance.DifficultyLevel,
+                                                     enemy.Point,
+                                                     enemy.Coin);
+                foreach (Shooter st in instance.GetComponentsInChildren<Shooter>())
+                    st.Init(true, enemy.HasRandomFiringRate, enemy.FiringRate, 0, 0);
+
             }
             yield return new WaitForSeconds(spawnInterval);
         }
+    }
+
+    public void SpawnBoss()
+    {
+        
     }
 
     // 비어있는 고정 스폰 위치를 추가하는 함수

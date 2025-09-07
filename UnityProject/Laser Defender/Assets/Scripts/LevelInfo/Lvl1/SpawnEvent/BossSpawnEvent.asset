@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af936eee75682844d85ebfd2e083e9fa, type: 3}
   m_Name: BossSpawnEvent
   m_EditorClassIdentifier: 
-  time: 600
+  time: 300
   spawnInterval: 0
   enemy: {fileID: 11400000, guid: 3fb33892e24a12d42b16b37e351022e1, type: 2}

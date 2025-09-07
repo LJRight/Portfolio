@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int gameOverMenuIdx = 4;
     [SerializeField] bool isPlayer = false;
     [SerializeField] private float health = 50;
+    public float HP => health;
     [SerializeField] int myPoint = 10, myCoin = 5;
     [SerializeField] ParticleSystem hitEffect;
     [SerializeField] GameObject coin, powerUp;
@@ -75,7 +75,7 @@ public class Health : MonoBehaviour
     {
         health -= dmg;
         if (isPlayer)
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         if (isPlayer || health <= 0)
             Die();
         else
@@ -123,7 +123,6 @@ public class Health : MonoBehaviour
         gameObject.GetComponent<Collider2D>().enabled = false;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(1.0f);
-        UIManager.Instance.SFM.SlideToScene(gameOverMenuIdx);
         GameController.Instance.GameOver();
     }
     IEnumerator WaitForAIDeath()

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,7 +31,6 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioSource mainBGMSource;
     [SerializeField] List<AudioClip> BGMList;
     [SerializeField] float BGMVolume = 0.65f;
-
     float bgmSliderValue = 1.0f, sfxSliderValue = 1.0f;
     private void Awake()
     {

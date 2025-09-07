@@ -55,6 +55,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -103,16 +104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 8154078461460181772, guid: 43af6027b0a1c0d4e890f387e2c0919b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.8
 --- !u!114 &565671198165498537
 MonoBehaviour:
@@ -144,7 +143,7 @@ MonoBehaviour:
   noiseFrequency: 2
 --- !u!50 &2006397241448858057
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -155,8 +154,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -224,6 +223,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -272,16 +272,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 8154078461460181772, guid: 43af6027b0a1c0d4e890f387e2c0919b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.8
 --- !u!114 &2083732699970462086
 MonoBehaviour:
@@ -313,7 +311,7 @@ MonoBehaviour:
   noiseFrequency: 2
 --- !u!50 &819339985236913872
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -324,8 +322,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -383,16 +381,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 3308601037057521848, guid: 9dacadacbecdac94db805efa457c488b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.4
 --- !u!1 &3061637195344058193
 GameObject:
@@ -449,6 +445,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -497,16 +494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 8154078461460181772, guid: 43af6027b0a1c0d4e890f387e2c0919b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.8
 --- !u!114 &1814390675084616411
 MonoBehaviour:
@@ -538,7 +533,7 @@ MonoBehaviour:
   noiseFrequency: 2
 --- !u!50 &7744416381359885719
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -549,8 +544,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -618,6 +613,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -666,16 +662,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 8154078461460181772, guid: 43af6027b0a1c0d4e890f387e2c0919b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.8
 --- !u!114 &1312610295624331026
 MonoBehaviour:
@@ -707,7 +701,7 @@ MonoBehaviour:
   noiseFrequency: 2
 --- !u!50 &1293922868336090925
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -718,8 +712,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -777,16 +771,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 3308601037057521848, guid: 9dacadacbecdac94db805efa457c488b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.4
 --- !u!1 &7094517206938970555
 GameObject:
@@ -833,16 +825,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useAI: 0
-  towardPlayer: 0
   isBurst: 0
-  isSpriteRotating: 0
   isTwinCannon: 0
   burstCooldown: 0.5
   minBurstCnt: 3
   maxBurstCnt: 8
   myMode: 0
   projectilePrefab: {fileID: 3308601037057521848, guid: 9dacadacbecdac94db805efa457c488b, type: 3}
-  projectileSpeed: 14
+  projectileSpeed: 16
   firingRate: 0.4
 --- !u!1 &8996295592155770381
 GameObject:
@@ -911,6 +901,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1037,7 +1028,7 @@ CapsuleCollider2D:
   m_Direction: 0
 --- !u!50 &-4279699484892323234
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1048,8 +1039,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1074,11 +1065,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6425d42bdbc8718488912459e9bac5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverMenuIdx: 4
   isPlayer: 1
-  health: 10
+  health: 3
   myPoint: 0
-  myCoin: 5
+  myCoin: 0
   hitEffect: {fileID: 5754580665999156372, guid: f26fd733e3d66a441a5114263a81a4c1, type: 3}
   coin: {fileID: 0}
   powerUp: {fileID: 0}
@@ -1094,7 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5ebe8784444a74b8fb4ff57c30a2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4.6
+  moveSpeed: 4.8
   paddingLeft: 0.5
   paddingRight: 0.5
   paddingTop: 1.2
