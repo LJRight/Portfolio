@@ -8,7 +8,7 @@
 
 ## 📂 Projects
 
-### 1. [Cave Escape](./UnityProject/Cave Escape/)
+### 1. [Cave Escape](./UnityProject/Cave%20Escape/)
 - **장르**: 2D 플랫포머  
 - **기간**: 2024.11 ~ 2025.12  
 - **개발 인원**: 4명  
@@ -23,7 +23,7 @@
 
 ---
 
-### 2. [SkyFall Raiders](./UnityProject/SkyFall Raiders/)
+### 2. [SkyFall Raiders](./UnityProject/SkyFall%20Raiders/)
 - **장르**: 2D 탑다운 슈팅  
 - **기간**: 2025.06 ~ 진행 중  
 - **개발 인원**: 1명  
