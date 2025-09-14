@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0f39a8804db37df4a850d980740867ad
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Core/Scripts/Utilities/CharacterDetector.cs
+  uploadId: 711412

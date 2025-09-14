@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc3401d4e7be1614b8ddb5edce73ea57
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Presets/Preset_Inputs.preset
+  uploadId: 711412

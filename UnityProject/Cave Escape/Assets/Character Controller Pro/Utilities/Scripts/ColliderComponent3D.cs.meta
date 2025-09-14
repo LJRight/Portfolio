@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cf33f9fc7249781428e26579da468b6c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Utilities/Scripts/ColliderComponent3D.cs
+  uploadId: 711412

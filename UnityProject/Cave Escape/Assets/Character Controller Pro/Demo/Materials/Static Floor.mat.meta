@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 90901a404f1302c44bdc11cfed2b909a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Materials/Static Floor.mat
+  uploadId: 711412

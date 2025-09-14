@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 36306ba9866cb5b46b38bc07bf5f031f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Core/Prefabs/Capsule Blank Character.prefab
+  uploadId: 711412

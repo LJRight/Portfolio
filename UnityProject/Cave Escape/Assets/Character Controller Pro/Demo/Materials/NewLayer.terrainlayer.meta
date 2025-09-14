@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cd904d395e5ca7f4eaea225242ecde32
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Materials/NewLayer.terrainlayer
+  uploadId: 711412

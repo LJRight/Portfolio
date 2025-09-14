@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cf24b2329dc8d7b479391dfae46c4061
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Prefabs/UI/Info Canvas.prefab
+  uploadId: 711412

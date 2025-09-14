@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5c7991a9eba7daf43a059029a211001a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Scripts/CharacterDetector/JumpPad.cs
+  uploadId: 711412

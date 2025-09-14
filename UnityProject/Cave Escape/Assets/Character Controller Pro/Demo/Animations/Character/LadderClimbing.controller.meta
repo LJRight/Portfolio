@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ca911fc8986930847a392d34ecdf91e3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Animations/Character/LadderClimbing.controller
+  uploadId: 711412

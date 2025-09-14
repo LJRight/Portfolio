@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e01f914ef0edd349a9e2792bea8a20d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Animations/Character/Dash.controller
+  uploadId: 711412

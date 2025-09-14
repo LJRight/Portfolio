@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e5597bc979f0fa346bc397cd43364b9a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Implementation/Resources/template-character-actions.txt
+  uploadId: 711412

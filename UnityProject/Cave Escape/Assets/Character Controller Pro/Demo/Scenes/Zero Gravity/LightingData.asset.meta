@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8b59e12828c9e7f4f9eca7f82200f59e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Scenes/Zero Gravity/LightingData.asset
+  uploadId: 711412

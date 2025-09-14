@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d11528f3e59fe9488db0e91bd27a270
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Animations/DemoPlatform.anim
+  uploadId: 711412

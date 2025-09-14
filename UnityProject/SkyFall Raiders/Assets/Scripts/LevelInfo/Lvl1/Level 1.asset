@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4097154a57d5c4ff58ed9dfff6066d82, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  timeline:
+  - {fileID: 11400000, guid: 92ecd0514b4f8fe42864e0cc6fb9dc93, type: 2}
+  - {fileID: 11400000, guid: d84cc1325bfeb144d99cf02d2bf5a5bf, type: 2}
+  - {fileID: 11400000, guid: 3168accb519124e4cae57939ae2156dd, type: 2}
+  - {fileID: 11400000, guid: f8132a50896ba492dbf075027bbaa1fb, type: 2}
+  - {fileID: 11400000, guid: f4b9a4c47ca42b945b31b6925e99fbf3, type: 2}
+  - {fileID: 11400000, guid: a927b8cb8fba944a3974eb3cef8e4fe4, type: 2}
+  - {fileID: 11400000, guid: fea6eb007088344299df2c60c437c76c, type: 2}
+  - {fileID: 11400000, guid: fe8469134076c49a7a20bbe2c0de7dbf, type: 2}
+  wave_Infos:
+  - {fileID: 11400000, guid: d508278fecd7a40e5a0d8befe2894a89, type: 2}
+  - {fileID: 11400000, guid: 48c15c33b92604b50a96953583eb0f51, type: 2}
+  - {fileID: 11400000, guid: 4843d6360ad8143f6bb457dedf1effbb, type: 2}
+  - {fileID: 11400000, guid: 1a721ef7e9a4a4260a1eabf2cedfa383, type: 2}
+  basicEnemyInfo: {fileID: 11400000, guid: 5018f11f716dc4d05ba953110a8afccf, type: 2}
+  difficultyIncreaseInterval: 35
+  difficultyMultiplier: 1.6
+  minTimeBetweenWave: 0
+  maxTimeBetweenWave: 0.8
+  maxEnemyAttackSpeedMultiplier: 0.65

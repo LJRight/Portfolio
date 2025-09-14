@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545febb30167849279779e00f4ae9935, type: 3}
+  m_Name: MissileSE 1
+  m_EditorClassIdentifier: 
+  time: 72
+  spawnInterval: 7.5
+  missileInfo: {fileID: 11400000, guid: d70819427306a48caa2d471125e6ec3b, type: 2}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed764e6e989198c48b2ccbc74f4bf245
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Physics/High friction.physicMaterial
+  uploadId: 711412

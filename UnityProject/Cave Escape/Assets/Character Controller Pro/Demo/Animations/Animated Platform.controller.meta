@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 338ede0de464fad469f9958e0147c8bd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Animations/Animated Platform.controller
+  uploadId: 711412

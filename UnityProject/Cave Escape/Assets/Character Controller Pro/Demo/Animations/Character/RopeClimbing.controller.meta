@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac2694d39a73d6e4badd624717b0111d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Animations/Character/RopeClimbing.controller
+  uploadId: 711412

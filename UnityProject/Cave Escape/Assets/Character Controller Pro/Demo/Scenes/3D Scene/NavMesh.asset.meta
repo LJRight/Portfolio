@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66911a3214142784e9c96c0063329412
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Scenes/3D Scene/NavMesh.asset
+  uploadId: 711412

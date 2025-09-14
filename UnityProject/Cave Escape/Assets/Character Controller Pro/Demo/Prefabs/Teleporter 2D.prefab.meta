@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0ecb29da04ae5724183c48a59b4ba486
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Prefabs/Teleporter 2D.prefab
+  uploadId: 711412

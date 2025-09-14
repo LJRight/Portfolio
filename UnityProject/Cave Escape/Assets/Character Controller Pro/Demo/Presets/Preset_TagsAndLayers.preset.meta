@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 89088565468c59741833448794335168
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Presets/Preset_TagsAndLayers.preset
+  uploadId: 711412

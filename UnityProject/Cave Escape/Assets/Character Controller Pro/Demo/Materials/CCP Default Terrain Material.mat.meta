@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c9872a99b9d5e6949ac696a661f565a0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Demo/Materials/CCP Default Terrain Material.mat
+  uploadId: 711412

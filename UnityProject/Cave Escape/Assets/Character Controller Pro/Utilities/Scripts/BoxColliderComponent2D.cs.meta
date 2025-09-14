@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a6795a6b4ddee3a4780e0b0283715bc6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 159150
+  packageName: Character Controller Pro
+  packageVersion: 1.4.11
+  assetPath: Assets/Character Controller Pro/Utilities/Scripts/BoxColliderComponent2D.cs
+  uploadId: 711412
