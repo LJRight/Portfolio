@@ -19,7 +19,7 @@
   - **컴투스 게임 공모전 출품작**
   - 독창적인 게임 컨셉  
   - Unity 첫 학습 및 협업 프로젝트 경험  
-- **플레이 영상**: [YouTube 링크](https://youtu.be/xxxx)  
+- **플레이 영상**: [YouTube 링크](https://youtu.be/ZDyX1g7ExBU)  
 
 ---
 
