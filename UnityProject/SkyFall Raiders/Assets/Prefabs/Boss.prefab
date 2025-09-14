@@ -587,12 +587,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  health: 12000
+  health: 8000
   myPoint: 1500
   myCoin: 0
   hitEffect: {fileID: 5754580665999156372, guid: f26fd733e3d66a441a5114263a81a4c1, type: 3}
   coin: {fileID: 3809195124726315014, guid: 81d55082185505946958ed588f110509, type: 3}
   powerUp: {fileID: 733029547317401988, guid: 06eb4794909e5a547bf293ab9dfc23d1, type: 3}
+  doubleItem: 0
 --- !u!114 &3660090333262433367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,12 +634,12 @@ MonoBehaviour:
   rate: 0.07
   MinBulletCount: 6
   MaxBulletCount: 14
-  spd: 9.5
+  spd: 9
   duration: 2.5
   rate_: 0.18
   stAg: 60
-  minGap: 0.5
-  maxGap: 1.5
+  minGap: 1
+  maxGap: 2
 --- !u!114 &939634267722349499
 MonoBehaviour:
   m_ObjectHideFlags: 0
